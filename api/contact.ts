@@ -9,14 +9,14 @@ const limit = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
   max: 5, // 5 requests per IP
   message: 'Too many requests from this IP, please try again later.',
-  keyGenerator: (req) => {
+  keyGenerator: (req: any) => {
     return req.headers['x-forwarded-for'] || req.connection.remoteAddress || 'unknown';
   }
 });
 
-const applyMiddleware = (req, res, fn) => {
+const applyMiddleware = (req: VercelRequest, res: VercelResponse, fn: Function) => {
   return new Promise((resolve, reject) => {
-    fn(req, res, (result) => {
+    fn(req, res, (result: any) => {
       if (result instanceof Error) {
         return reject(result);
       }

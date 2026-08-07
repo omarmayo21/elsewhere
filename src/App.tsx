@@ -8,6 +8,7 @@ import { Creeks } from '@/pages/projects/Creeks';
 import { Videos } from '@/pages/Videos';
 import { Cart } from '@/pages/Cart';
 import { useEffect } from 'react';
+import { AnalyticsProvider } from '@/components/AnalyticsProvider';
 
 function App() {
   const navigate = useNavigate();
@@ -55,8 +56,10 @@ function App() {
   }, [navigate]);
 
   return (
-    <Routes>
-      <Route path="/">
+    <>
+      <AnalyticsProvider />
+      <Routes>
+        <Route path="/">
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
@@ -67,6 +70,7 @@ function App() {
         <Route path="cart" element={<Cart />} />
       </Route>
     </Routes>
+    </>
   );
 }
 
