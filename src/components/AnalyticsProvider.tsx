@@ -10,6 +10,17 @@ export function AnalyticsProvider() {
     const PIXEL_ID = import.meta.env.VITE_META_PIXEL_ID;
     const CLARITY_ID = import.meta.env.VITE_CLARITY_ID;
 
+    const ADS_ID = import.meta.env.VITE_GOOGLE_ADS_ID;
+
+    // We only need to define gtag once.
+    if (!window.gtag) {
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function gtag() {
+        window.dataLayer.push(arguments);
+      };
+      window.gtag('js', new Date());
+    }
+
     // Initialize GA4
     if (GA_ID && !document.getElementById('ga-script')) {
       const script = document.createElement('script');
@@ -18,14 +29,23 @@ export function AnalyticsProvider() {
       script.async = true;
       document.head.appendChild(script);
 
-      window.dataLayer = window.dataLayer || [];
-      window.gtag = function gtag() {
-        window.dataLayer.push(arguments);
-      };
-      window.gtag('js', new Date());
       window.gtag('config', GA_ID, {
         send_page_view: false, // We'll handle this manually on route change
       });
+    }
+
+    // Initialize Google Ads
+    if (ADS_ID && !document.getElementById('google-ads-script')) {
+      // If GA4 wasn't loaded, we load the gtag script using ADS_ID
+      if (!document.getElementById('ga-script')) {
+        const script = document.createElement('script');
+        script.id = 'google-ads-script';
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${ADS_ID}`;
+        script.async = true;
+        document.head.appendChild(script);
+      }
+      
+      window.gtag('config', ADS_ID);
     }
 
     // Initialize Meta Pixel

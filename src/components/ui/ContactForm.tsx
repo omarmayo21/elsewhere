@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
-import { trackFormSubmit, trackLead } from '@/services/analytics';
+import { trackFormSubmit, trackLead, trackGoogleAdsLead } from '@/services/analytics';
 
 const formSchema = z.object({
   fname: z.string().min(2, 'First name is required'),
@@ -66,6 +66,7 @@ export const ContactForm = ({ formName = 'Contact Form' }: ContactFormProps) => 
       setStatus('success');
       reset();
       trackLead(formName);
+      trackGoogleAdsLead();
     } catch (error) {
       console.error(error);
       setStatus('error');

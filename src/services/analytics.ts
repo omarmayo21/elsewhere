@@ -98,6 +98,26 @@ export const trackFormSubmit = (form_name: string) => {
   trackEvent('form_submit', { form_name });
 };
 
+export const trackGoogleAdsLead = () => {
+  const CONVERSION_ID = import.meta.env.VITE_GOOGLE_ADS_CONVERSION_ID;
+  const CONVERSION_LABEL = import.meta.env.VITE_GOOGLE_ADS_CONVERSION_LABEL;
+
+  if (!CONVERSION_ID || !CONVERSION_LABEL) {
+    console.warn('Google Ads Tracking is missing VITE_GOOGLE_ADS_CONVERSION_ID or VITE_GOOGLE_ADS_CONVERSION_LABEL');
+    return;
+  }
+
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'conversion', {
+      'send_to': `${CONVERSION_ID}/${CONVERSION_LABEL}`,
+    });
+    logDebug('Google Ads Conversion Fired', {
+      conversion_id: CONVERSION_ID,
+      conversion_label: CONVERSION_LABEL,
+    });
+  }
+};
+
 export const trackProjectView = (project_name: string) => {
   trackEvent('view_project', { project_name });
 };

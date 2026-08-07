@@ -167,13 +167,25 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         },
       });
 
+      const finalSourcePage = req.body.sourcePage === '/' ? 'The One Alex' : (req.body.sourcePage || 'Unknown');
+      const createdAt = new Date().toISOString();
+
       await transporter.sendMail({
         from: process.env.EMAIL_FROM || process.env.SMTP_USER,
         to: process.env.EMAIL_TO,
         replyTo: email,
         subject: `New Lead from ${name}: ${subject || 'Website Contact Form'}`,
-        text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`,
-        html: `<p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Subject:</strong> ${subject}</p><p><strong>Message:</strong><br/>${message.replace(/\n/g, '<br/>')}</p>`,
+        text: `Name: ${name}\nEmail: ${email}\nPhone: ${req.body.phone || ''}\nProperty Type: ${req.body.propertyType || ''}\nMessage:\n${message}\n\nSubject: ${subject}\nSource Page: ${finalSourcePage}\nCreated At: ${createdAt}`,
+        html: `
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Phone:</strong> ${req.body.phone || ''}</p>
+          <p><strong>Property Type:</strong> ${req.body.propertyType || ''}</p>
+          <p><strong>Message:</strong><br/>${message.replace(/\n/g, '<br/>')}</p>
+          <p><strong>Subject:</strong> ${subject}</p>
+          <p><strong>Source Page:</strong> ${finalSourcePage}</p>
+          <p><strong>Created At:</strong> ${createdAt}</p>
+        `,
       });
     }
 
