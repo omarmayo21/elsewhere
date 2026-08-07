@@ -65,9 +65,32 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     // 1. Save to Google Sheets
     if (process.env.GOOGLE_SHEET_ID && process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL && process.env.GOOGLE_PRIVATE_KEY) {
+      const rawPrivateKey = process.env.GOOGLE_PRIVATE_KEY || "";
+      const privateKey = rawPrivateKey
+        .replace(/^["']|["']$/g, "")
+        .replace(/\\n/g, "\n")
+        .trim();
+
+      console.log('--- Google Auth Diagnostics ---');
+      console.log('Key exists:', !!process.env.GOOGLE_PRIVATE_KEY);
+      console.log('Raw key length:', rawPrivateKey.length);
+      console.log('Normalized key length:', privateKey.length);
+      console.log('Contains BEGIN:', privateKey.includes('BEGIN PRIVATE KEY'));
+      console.log('Contains END:', privateKey.includes('END PRIVATE KEY'));
+      console.log('Contains literal \\n:', rawPrivateKey.includes('\\n'));
+      console.log('Contains actual newline:', rawPrivateKey.includes('\n') || privateKey.includes('\n'));
+      console.log('Starts with BEGIN block:', privateKey.startsWith('-----BEGIN PRIVATE KEY-----'));
+      console.log('Ends with END block:', privateKey.endsWith('-----END PRIVATE KEY-----'));
+      console.log('-------------------------------');
+
+      if (!privateKey.startsWith('-----BEGIN PRIVATE KEY-----') || !privateKey.endsWith('-----END PRIVATE KEY-----')) {
+        console.error('Invalid Google Private Key Format');
+        return res.status(500).json({ error: 'Server configuration error: Invalid Google Private Key format.' });
+      }
+
       const auth = new JWT({
         email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-        key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+        key: privateKey,
         scopes: ['https://www.googleapis.com/auth/spreadsheets'],
       });
       const doc = new GoogleSpreadsheet(process.env.GOOGLE_SHEET_ID, auth);
