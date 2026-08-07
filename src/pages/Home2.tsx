@@ -3987,7 +3987,7 @@ export const Home = () => {
 </div>
 </div></div></div><div className="fe-block fe-block-f3bbea4717b8aea17eb0"><div className="sqs-block website-component-block sqs-block-website-component sqs-block-html html-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/d01d9fd8-3193-4bda-936f-1aec27126dc9_810/website.components.html.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/d01d9fd8-3193-4bda-936f-1aec27126dc9_810/website.components.html.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.html" data-sqsp-block="text" data-website-component-id="f3bbea4717b8aea17eb0" id="block-f3bbea4717b8aea17eb0"><div className="sqs-block-content"><div className="sqs-text-block-container">
   
-  <div className="sqs-html-content" data-sqsp-text-block-content><p className="" style={{textAlign: "center", whiteSpace: "pre-wrap"} as any} data-rte-preserve-empty="true">Email Address: sales@elsewhere-eg.net</p></div>
+  <div className="sqs-html-content" data-sqsp-text-block-content><p className="" style={{textAlign: "center", whiteSpace: "pre-wrap"} as any} data-rte-preserve-empty="true">Email Address: sales@elsewhere-egy.net</p></div>
 
 
   
