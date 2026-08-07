@@ -104,21 +104,45 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         } catch (e: any) {
           if (e.message && e.message.includes('No values in the header row')) {
             console.log('Initializing headers in empty Google Sheet');
-            await sheet.setHeaderRow(['Date', 'Name', 'Email', 'Phone', 'Property Type', 'Subject', 'Message']);
+            await sheet.setHeaderRow(['name', 'email', 'phone', 'propertyType', 'message', 'subject', 'createdAt']);
           } else {
             throw e;
           }
         }
 
-        await sheet.addRow({
-          Date: new Date().toISOString(),
-          Name: name || '',
-          Email: email || '',
-          Phone: req.body.phone || '',
-          'Property Type': req.body.propertyType || '',
-          Subject: subject || '',
-          Message: message || '',
+        console.log('--- Google Sheets Append Diagnostics ---');
+        console.log('Spreadsheet ID:', doc.spreadsheetId);
+        console.log('Worksheet Title:', sheet.title);
+        console.log('Detected Headers:', sheet.headerValues);
+
+        const newRow = await sheet.addRow({
+          name: name || '',
+          email: email || '',
+          phone: req.body.phone || '',
+          propertyType: req.body.propertyType || '',
+          message: message || '',
+          subject: subject || '',
+          createdAt: new Date().toISOString(),
         });
+
+        console.log('Append Response:', newRow ? 'Row Created' : 'No Row Returned');
+        if (newRow && newRow.rowNumber) {
+           console.log(`Successfully appended to Row Number: ${newRow.rowNumber}`);
+        } else {
+           console.error('Failed to retrieve row number from append operation.');
+           throw new Error('Append operation returned empty or invalid row data.');
+        }
+
+        // Verify by reading the row back (this is a bit heavy, but requested for debug)
+        const rows = await sheet.getRows({ offset: newRow.rowNumber - 2, limit: 1 });
+        if (rows && rows.length > 0) {
+           console.log('Verified Appended Data:', rows[0].toObject());
+        } else {
+           throw new Error('Failed to verify appended row data.');
+        }
+        
+        console.log('----------------------------------------');
+
       } catch (sheetError: any) {
         console.error('--- Google Sheets API Error ---');
         console.error(sheetError);
