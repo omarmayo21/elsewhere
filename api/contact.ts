@@ -2,28 +2,6 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 import nodemailer from 'nodemailer';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import { JWT } from 'google-auth-library';
-import rateLimit from 'express-rate-limit';
-
-// Simple Rate limiting for serverless
-const limit = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 5, // 5 requests per IP
-  message: 'Too many requests from this IP, please try again later.',
-  keyGenerator: (req: any) => {
-    return req.headers['x-forwarded-for'] || req.connection.remoteAddress || 'unknown';
-  }
-});
-
-const applyMiddleware = (req: VercelRequest, res: VercelResponse, fn: Function) => {
-  return new Promise((resolve, reject) => {
-    fn(req, res, (result: any) => {
-      if (result instanceof Error) {
-        return reject(result);
-      }
-      return resolve(result);
-    });
-  });
-};
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   // CORS setup
@@ -42,12 +20,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method Not Allowed' });
-  }
-
-  try {
-    await applyMiddleware(req, res, limit);
-  } catch (error) {
-    return res.status(429).json({ error: 'Too many requests' });
   }
 
   try {
