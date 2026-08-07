@@ -104,7 +104,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         } catch (e: any) {
           if (e.message && e.message.includes('No values in the header row')) {
             console.log('Initializing headers in empty Google Sheet');
-            await sheet.setHeaderRow(['name', 'email', 'phone', 'propertyType', 'message', 'subject', 'createdAt']);
+            await sheet.setHeaderRow(['name', 'email', 'phone', 'propertyType', 'message', 'subject', 'sourcePage', 'createdAt']);
           } else {
             throw e;
           }
@@ -115,6 +115,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         console.log('Worksheet Title:', sheet.title);
         console.log('Detected Headers:', sheet.headerValues);
 
+        // If sourcePage header is missing from an existing sheet, we might want to add it, but google-spreadsheet
+        // requires adding the column manually or resizing. If the user added it, it will map correctly.
+
         const newRow = await sheet.addRow({
           name: name || '',
           email: email || '',
@@ -122,6 +125,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           propertyType: req.body.propertyType || '',
           message: message || '',
           subject: subject || '',
+          sourcePage: req.body.sourcePage || '',
           createdAt: new Date().toISOString(),
         });
 

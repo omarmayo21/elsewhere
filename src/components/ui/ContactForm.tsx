@@ -57,6 +57,7 @@ export const ContactForm = ({ formName = 'Contact Form' }: ContactFormProps) => 
           message: data.message || `Phone: ${countryCode}${data.phone}`,
           subject: formName,
           honeypot: data.honeypot,
+          sourcePage: typeof window !== 'undefined' ? window.location.pathname : '',
         }),
       });
 
