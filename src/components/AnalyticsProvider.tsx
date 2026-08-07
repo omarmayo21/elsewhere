@@ -34,7 +34,9 @@ export function AnalyticsProvider() {
       });
     }
 
-    // Initialize Google Ads
+    const CONVERSION_ID = import.meta.env.VITE_GOOGLE_ADS_CONVERSION_ID;
+
+    // Initialize Google Ads Base Tag
     if (ADS_ID && !document.getElementById('google-ads-script')) {
       // If GA4 wasn't loaded, we load the gtag script using ADS_ID
       if (!document.getElementById('ga-script')) {
@@ -46,6 +48,12 @@ export function AnalyticsProvider() {
       }
       
       window.gtag('config', ADS_ID);
+    }
+
+    // Initialize Google Ads Conversion Tag
+    if (CONVERSION_ID) {
+      const formattedConvId = CONVERSION_ID.startsWith('AW-') ? CONVERSION_ID : `AW-${CONVERSION_ID}`;
+      window.gtag('config', formattedConvId);
     }
 
     // Initialize Meta Pixel
