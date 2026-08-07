@@ -2,6 +2,26 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 import nodemailer from 'nodemailer';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import { JWT } from 'google-auth-library';
+import { Redis } from '@upstash/redis';
+import { Ratelimit } from '@upstash/ratelimit';
+
+// Initialize Redis only if environment variables are provided
+const redis = (process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN)
+  ? new Redis({
+      url: process.env.UPSTASH_REDIS_REST_URL,
+      token: process.env.UPSTASH_REDIS_REST_TOKEN,
+    })
+  : null;
+
+// Safest serverless rate limit: Sliding window (10 requests per 10 minutes per IP)
+// Lenient enough to avoid blocking corporate networks, strict enough to stop spam scripts
+const rateLimiter = redis
+  ? new Ratelimit({
+      redis: redis,
+      limiter: Ratelimit.slidingWindow(10, '10 m'),
+      analytics: false,
+    })
+  : null;
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   // CORS setup
@@ -20,6 +40,22 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method Not Allowed' });
+  }
+
+  // Execute Rate Limit
+  if (rateLimiter) {
+    // Use x-forwarded-for in Vercel to get the actual client IP
+    const ip = req.headers['x-forwarded-for'] || req.socket?.remoteAddress || '127.0.0.1';
+    
+    // We combine the IP with a prefix to avoid collisions with other potential rate limits
+    const { success } = await rateLimiter.limit(`contact_form_${ip}`);
+    
+    if (!success) {
+      console.warn(`Rate limit exceeded for IP: ${ip}`);
+      return res.status(429).json({ error: 'Too many requests. Please wait a few minutes before trying again.' });
+    }
+  } else {
+    console.warn('UPSTASH_REDIS_REST_URL is not configured. Rate limiting is currently bypassed.');
   }
 
   try {
