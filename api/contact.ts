@@ -125,7 +125,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           propertyType: req.body.propertyType || '',
           message: message || '',
           subject: subject || '',
-          sourcePage: req.body.sourcePage || '',
+          sourcePage: req.body.sourcePage === '/' ? 'The One Alex' : (req.body.sourcePage || ''),
           createdAt: new Date().toISOString(),
         });
 
