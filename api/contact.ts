@@ -94,15 +94,37 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         scopes: ['https://www.googleapis.com/auth/spreadsheets'],
       });
       const doc = new GoogleSpreadsheet(process.env.GOOGLE_SHEET_ID, auth);
-      await doc.loadInfo();
-      const sheet = doc.sheetsByIndex[0];
-      await sheet.addRow({
-        Date: new Date().toISOString(),
-        Name: name,
-        Email: email,
-        Subject: subject || '',
-        Message: message,
-      });
+      
+      try {
+        await doc.loadInfo();
+        const sheet = doc.sheetsByIndex[0];
+        
+        try {
+          await sheet.loadHeaderRow();
+        } catch (e: any) {
+          if (e.message && e.message.includes('No values in the header row')) {
+            console.log('Initializing headers in empty Google Sheet');
+            await sheet.setHeaderRow(['Date', 'Name', 'Email', 'Phone', 'Property Type', 'Subject', 'Message']);
+          } else {
+            throw e;
+          }
+        }
+
+        await sheet.addRow({
+          Date: new Date().toISOString(),
+          Name: name || '',
+          Email: email || '',
+          Phone: req.body.phone || '',
+          'Property Type': req.body.propertyType || '',
+          Subject: subject || '',
+          Message: message || '',
+        });
+      } catch (sheetError: any) {
+        console.error('--- Google Sheets API Error ---');
+        console.error(sheetError);
+        console.error('-------------------------------');
+        return res.status(500).json({ error: 'Failed to save data to Google Sheets.', details: sheetError.message });
+      }
     }
 
     // 2. Send Email via Gmail SMTP
