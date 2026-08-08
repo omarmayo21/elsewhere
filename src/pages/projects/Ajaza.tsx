@@ -1,4 +1,4 @@
-﻿// @ts-nocheck
+// @ts-nocheck
 import React from 'react';
 import { ContactForm } from '@/components/ui/ContactForm';
 
@@ -1386,396 +1386,6 @@ export const Ajaza = () => {
   
 </section>
 
-      
-    
-      
-        
-        
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<section
-  data-test="page-section"
-  
-  data-section-theme=""
-  className='page-section 
-    
-      full-bleed-section
-      layout-engine-section
-    
-    background-width--full-bleed
-    
-      section-height--small
-    
-    
-      content-width--wide
-    
-    horizontal-alignment--center
-    vertical-alignment--middle
-    
-    
-    '
-  
-  data-section-id="6a61ec282383587ba923bd46"
-  
-  data-controller="SectionWrapperController"
-  data-current-styles="{
-&quot;imageOverlayOpacity&quot;: 0.15,
-&quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
-&quot;sectionHeight&quot;: &quot;section-height--small&quot;,
-&quot;customSectionHeight&quot;: 1,
-&quot;horizontalAlignment&quot;: &quot;horizontal-alignment--center&quot;,
-&quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
-&quot;contentWidth&quot;: &quot;content-width--wide&quot;,
-&quot;customContentWidth&quot;: 50,
-&quot;sectionTheme&quot;: &quot;&quot;,
-&quot;sectionAnimation&quot;: &quot;none&quot;,
-&quot;backgroundMode&quot;: &quot;video&quot;
-}"
-  data-current-context="{
-&quot;video&quot;: {
-&quot;playbackSpeed&quot;: 0.5,
-&quot;filter&quot;: 1,
-&quot;filterStrength&quot;: 0,
-&quot;zoom&quot;: 0,
-&quot;videoSourceProvider&quot;: &quot;none&quot;
-},
-&quot;backgroundImageId&quot;: null,
-&quot;backgroundMediaEffect&quot;: {
-&quot;type&quot;: &quot;none&quot;
-},
-&quot;divider&quot;: {
-&quot;enabled&quot;: false
-},
-&quot;typeName&quot;: &quot;page&quot;
-}"
-  data-animation="none"
-  data-fluid-engine-section
-   
-  
-    
-  
-  
-  
-  
-  
-
-
-  data-sqsp-section="fluid-engine"
-
-
->
-  <div
-    className="section-border"
-    
-  >
-    <div className="section-background">\n</div>
-  </div>
-  <div
-    className='content-wrapper'
-    style={{} as any}
-  >
-    <div
-      className="content"
-      
-    >
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <div data-fluid-engine="true"><style dangerouslySetInnerHTML={{ __html: `
-
-.fe-6a61ec282383587ba923bd45 {
-  --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px);
-  --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 );
-
-  display: grid;
-  position: relative;
-  grid-area: 1/1/-1/-1;
-  grid-template-rows: repeat(23,minmax(24px, auto));
-  grid-template-columns:
-    minmax(var(--grid-gutter), 1fr)
-    repeat(8, minmax(0, var(--cell-max-width)))
-    minmax(var(--grid-gutter), 1fr);
-  row-gap: 11.0px;
-  column-gap: 11.0px;
-  overflow-x: hidden;
-  overflow-x: clip;
-}
-
-@media (min-width: 768px) {
-  .background-width--inset .fe-6a61ec282383587ba923bd45 {
-    --inset-padding: calc(var(--sqs-site-gutter) * 2);
-  }
-
-  .fe-6a61ec282383587ba923bd45 {
-    --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px);
-    --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 );
-    --inset-padding: 0vw;
-
-    --row-height-scaling-factor: 0.0215;
-    --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) ));
-
-    grid-template-rows: repeat(13,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto));
-    grid-template-columns:
-      minmax(var(--grid-gutter), 1fr)
-      repeat(24, minmax(0, var(--cell-max-width)))
-      minmax(var(--grid-gutter), 1fr);
-  }
-}
-
-
-  .fe-block-553dbc0f36c9d3710646 {
-    grid-area: 1/3/15/9;
-    z-index: 3;
-
-    @media (max-width: 767px) {
-      
-      
-    }
-  }
-
-  .fe-block-553dbc0f36c9d3710646 .sqs-block {
-    justify-content: center;
-  }
-
-  .fe-block-553dbc0f36c9d3710646 .sqs-block-alignment-wrapper {
-    align-items: center;
-  }
-
-  @media (min-width: 768px) {
-    .fe-block-553dbc0f36c9d3710646 {
-      grid-area: 1/18/14/26;
-      z-index: 3;
-
-      
-
-      
-    }
-
-    .fe-block-553dbc0f36c9d3710646 .sqs-block {
-      justify-content: center;
-    }
-
-    .fe-block-553dbc0f36c9d3710646 .sqs-block-alignment-wrapper {
-      align-items: center;
-    }
-  }
-
-  .fe-block-cd3e5e89e3db6bb9e5bc {
-    grid-area: 15/1/24/11;
-    z-index: 1;
-
-    @media (max-width: 767px) {
-      
-      
-    }
-  }
-
-  .fe-block-cd3e5e89e3db6bb9e5bc .sqs-block {
-    justify-content: flex-start;
-  }
-
-  .fe-block-cd3e5e89e3db6bb9e5bc .sqs-block-alignment-wrapper {
-    align-items: flex-start;
-  }
-
-  @media (min-width: 768px) {
-    .fe-block-cd3e5e89e3db6bb9e5bc {
-      grid-area: 1/1/14/16;
-      z-index: 1;
-
-      
-
-      
-    }
-
-    .fe-block-cd3e5e89e3db6bb9e5bc .sqs-block {
-      justify-content: flex-start;
-    }
-
-    .fe-block-cd3e5e89e3db6bb9e5bc .sqs-block-alignment-wrapper {
-      align-items: flex-start;
-    }
-  }
-
-` }} /><div className="fluid-engine fe-6a61ec282383587ba923bd45"><div className="fe-block fe-block-553dbc0f36c9d3710646"><div className="sqs-block website-component-block sqs-block-website-component sqs-block-html html-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/31b4e3a9-f074-411d-ae8f-0cd820aa59c6_811/website.components.html.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/31b4e3a9-f074-411d-ae8f-0cd820aa59c6_811/website.components.html.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.html" data-sqsp-block="text" data-website-component-id="553dbc0f36c9d3710646" id="block-553dbc0f36c9d3710646"><div className="sqs-block-content"><div className="sqs-text-block-container">
-  
-  <div className="sqs-html-content" data-sqsp-text-block-content><h2 style={{whiteSpace: "pre-wrap"} as any} data-rte-preserve-empty="true"><strong>Ajaza</strong></h2><h2 style={{whiteSpace: "pre-wrap"} as any} data-rte-preserve-empty="true">All Year Long</h2><p className="sqsrte-small" style={{whiteSpace: "pre-wrap"} as any} data-rte-preserve-empty="true">Ajaza in New Alamein City transforms the North Coast from a seasonal vacation spot to a year-round metropolitan hub.</p><p style={{textAlign: "justify", whiteSpace: "pre-wrap"} as any} className="sqsrte-small" data-rte-preserve-empty="true">It offers an elevated coastal living experience with lush greenery, scenic water features, and private homes with uninterrupted views.</p><p style={{textAlign: "justify", whiteSpace: "pre-wrap"} as any} className="sqsrte-small" data-rte-preserve-empty="true">Residents enjoy luxury amenities that combine style with practicality, making Ajaza an ideal place to live throughout all four seasons.</p></div>
-
-
-  
-<style id="container-styles" dangerouslySetInnerHTML={{ __html: `#block-553dbc0f36c9d3710646 {
-    
-    --stroke-style: none;--stroke-thickness: 6px;
-    
-      
-      
-      
-    
-
-
-
-  }
-
-  #block-553dbc0f36c9d3710646 .sqs-html-content {
-    
-    --tweak-text-block-padding: 6% 6% 6% 6%;
-  --tweak-text-block-padding: initial;
-}
-
-  .fe-block-553dbc0f36c9d3710646 {
-      mix-blend-mode: var(--tweak-text-block-blend
-  );
-      border-radius: var(--tweak-text-block-radius);
-  }
-
-  
-  
-.fe-block-553dbc0f36c9d3710646 {
-      --tweak-text-block-radius: 0px 0px 0px 0px;
-    }
-
-
-  
-  .fe-block-553dbc0f36c9d3710646 {
-      --tweak-text-block-blend
-  : normal;
-    }
-  
-
-  .fe-block-553dbc0f36c9d3710646 {
-    --blur-value: blur(15px);}
-
-` }} />
-
-<style id="override-container-styles" dangerouslySetInnerHTML={{ __html: `
-    @media screen and (max-width: 767px) {
-          
-            
-
-#block-553dbc0f36c9d3710646 {
-            
-            }
-        }
-    
-  
-    @media screen and (max-width: 767px) {
-          #block-553dbc0f36c9d3710646 .sqs-html-content {
-            
-            }
-        }
-    
-  @media screen and (max-width: 767px) {
-          
-          
-
-          
-          
-          
-        }` }} />
-<style className="transform-overrides-vars" dangerouslySetInnerHTML={{ __html: `
-  
-` }} />
-
-
-
-
-</div>
-</div></div></div><div className="fe-block fe-block-cd3e5e89e3db6bb9e5bc"><div className="sqs-block website-component-block sqs-block-website-component sqs-block-video video-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.video/5cd2eb05-323b-4682-af74-2d7edaeb939a_556/website.components.video.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.video/5cd2eb05-323b-4682-af74-2d7edaeb939a_556/4032.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.video/5cd2eb05-323b-4682-af74-2d7edaeb939a_556/website.components.video.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.video" data-sqsp-block="video" data-website-component-id="cd3e5e89e3db6bb9e5bc" id="block-cd3e5e89e3db6bb9e5bc"><div className="sqs-block-content">
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-    
-      
-    
-    <div className="intrinsic" style={{maxWidth: "100%"} as any}>
-      <div className="embed-block-wrapper">
-        <div
-          className="sqs-native-video"
-          data-config-settings=""
-          data-config-video="{&quot;systemDataSourceType&quot;:&quot;mp4&quot;,&quot;alexandriaUrl&quot;:&quot;https://video.squarespace-cdn.com/content/v1/6a61ec232383587ba923bad7/1784802344461-15RMTB5DN3BGZ2NJ5D2Z/{variant}&quot;,&quot;durationSeconds&quot;:95.166667,&quot;aspectRatio&quot;:1.7777777777777777,&quot;id&quot;:&quot;6a61ec282383587ba923bd3c&quot;,&quot;systemDataVariants&quot;:&quot;1920:1080,640:360&quot;,&quot;alexandriaLibraryId&quot;:&quot;6a61ec232383587ba923bad7&quot;,&quot;audioCodec&quot;:&quot;aac&quot;,&quot;systemDataId&quot;:&quot;1784802344461-15RMTB5DN3BGZ2NJ5D2Z&quot;,&quot;videoCodec&quot;:&quot;h264&quot;}"
-          
-        >
-          <div
-            className="native-video-player native-video-player--has-aspect-ratio"
-            style={{aspectRatio: "16/9"} as any}
-          ><video src="/videos/Ajaza.mp4" controls style={{ width: "100%", height: "100%", objectFit: "cover", position: "absolute", top: 0, left: 0 }} /></div>
-        </div>
-      </div>
-      
-      
-
-
-
-    </div>
-  
-
-
-
-
-<style className="transform-overrides-vars" dangerouslySetInnerHTML={{ __html: `
-  
-` }} />
-
-</div></div></div></div></div>
-    </div>
-  
-  </div>
-  
-</section>
-
-      
-    
-      
-        
-        
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
 <section
   data-test="page-section"
   
@@ -2390,6 +2000,399 @@ export const Ajaza = () => {
     
   
     </section>
+
+
+      
+    
+      
+        
+        
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<section
+  data-test="page-section"
+  
+  data-section-theme=""
+  className='page-section 
+    
+      full-bleed-section
+      layout-engine-section
+    
+    background-width--full-bleed
+    
+      section-height--small
+    
+    
+      content-width--wide
+    
+    horizontal-alignment--center
+    vertical-alignment--middle
+    
+    
+    '
+  
+  data-section-id="6a61ec282383587ba923bd46"
+  
+  data-controller="SectionWrapperController"
+  data-current-styles="{
+&quot;imageOverlayOpacity&quot;: 0.15,
+&quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
+&quot;sectionHeight&quot;: &quot;section-height--small&quot;,
+&quot;customSectionHeight&quot;: 1,
+&quot;horizontalAlignment&quot;: &quot;horizontal-alignment--center&quot;,
+&quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
+&quot;contentWidth&quot;: &quot;content-width--wide&quot;,
+&quot;customContentWidth&quot;: 50,
+&quot;sectionTheme&quot;: &quot;&quot;,
+&quot;sectionAnimation&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;video&quot;
+}"
+  data-current-context="{
+&quot;video&quot;: {
+&quot;playbackSpeed&quot;: 0.5,
+&quot;filter&quot;: 1,
+&quot;filterStrength&quot;: 0,
+&quot;zoom&quot;: 0,
+&quot;videoSourceProvider&quot;: &quot;none&quot;
+},
+&quot;backgroundImageId&quot;: null,
+&quot;backgroundMediaEffect&quot;: {
+&quot;type&quot;: &quot;none&quot;
+},
+&quot;divider&quot;: {
+&quot;enabled&quot;: false
+},
+&quot;typeName&quot;: &quot;page&quot;
+}"
+  data-animation="none"
+  data-fluid-engine-section
+   
+  
+    
+  
+  
+  
+  
+  
+
+
+  data-sqsp-section="fluid-engine"
+
+
+>
+  <div
+    className="section-border"
+    
+  >
+    <div className="section-background">\n</div>
+  </div>
+  <div
+    className='content-wrapper'
+    style={{} as any}
+  >
+    <div
+      className="content"
+      
+    >
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div data-fluid-engine="true"><style dangerouslySetInnerHTML={{ __html: `
+
+.fe-6a61ec282383587ba923bd45 {
+  --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px);
+  --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 );
+
+  display: grid;
+  position: relative;
+  grid-area: 1/1/-1/-1;
+  grid-template-rows: repeat(23,minmax(24px, auto));
+  grid-template-columns:
+    minmax(var(--grid-gutter), 1fr)
+    repeat(8, minmax(0, var(--cell-max-width)))
+    minmax(var(--grid-gutter), 1fr);
+  row-gap: 11.0px;
+  column-gap: 11.0px;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+@media (min-width: 768px) {
+  .background-width--inset .fe-6a61ec282383587ba923bd45 {
+    --inset-padding: calc(var(--sqs-site-gutter) * 2);
+  }
+
+  .fe-6a61ec282383587ba923bd45 {
+    --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px);
+    --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 );
+    --inset-padding: 0vw;
+
+    --row-height-scaling-factor: 0.0215;
+    --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) ));
+
+    grid-template-rows: repeat(13,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto));
+    grid-template-columns:
+      minmax(var(--grid-gutter), 1fr)
+      repeat(24, minmax(0, var(--cell-max-width)))
+      minmax(var(--grid-gutter), 1fr);
+  }
+}
+
+
+  .fe-block-553dbc0f36c9d3710646 {
+    grid-area: 1/3/15/9;
+    z-index: 3;
+
+    @media (max-width: 767px) {
+      
+      
+    }
+  }
+
+  .fe-block-553dbc0f36c9d3710646 .sqs-block {
+    justify-content: center;
+  }
+
+  .fe-block-553dbc0f36c9d3710646 .sqs-block-alignment-wrapper {
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .fe-block-553dbc0f36c9d3710646 {
+      grid-area: 1/18/14/26;
+      z-index: 3;
+
+      
+
+      
+    }
+
+    .fe-block-553dbc0f36c9d3710646 .sqs-block {
+      justify-content: center;
+    }
+
+    .fe-block-553dbc0f36c9d3710646 .sqs-block-alignment-wrapper {
+      align-items: center;
+    }
+  }
+
+  .fe-block-cd3e5e89e3db6bb9e5bc {
+    grid-area: 15/1/24/11;
+    z-index: 1;
+
+    @media (max-width: 767px) {
+      
+      
+    }
+  }
+
+  .fe-block-cd3e5e89e3db6bb9e5bc .sqs-block {
+    justify-content: flex-start;
+  }
+
+  .fe-block-cd3e5e89e3db6bb9e5bc .sqs-block-alignment-wrapper {
+    align-items: flex-start;
+  }
+
+  @media (min-width: 768px) {
+    .fe-block-cd3e5e89e3db6bb9e5bc {
+      grid-area: 1/1/14/16;
+      z-index: 1;
+
+      
+
+      
+    }
+
+    .fe-block-cd3e5e89e3db6bb9e5bc .sqs-block {
+      justify-content: flex-start;
+    }
+
+    .fe-block-cd3e5e89e3db6bb9e5bc .sqs-block-alignment-wrapper {
+      align-items: flex-start;
+    }
+  }
+
+` }} /><div className="fluid-engine fe-6a61ec282383587ba923bd45"><div className="fe-block fe-block-553dbc0f36c9d3710646"><div className="sqs-block website-component-block sqs-block-website-component sqs-block-html html-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/31b4e3a9-f074-411d-ae8f-0cd820aa59c6_811/website.components.html.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/31b4e3a9-f074-411d-ae8f-0cd820aa59c6_811/website.components.html.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.html" data-sqsp-block="text" data-website-component-id="553dbc0f36c9d3710646" id="block-553dbc0f36c9d3710646"><div className="sqs-block-content"><div className="sqs-text-block-container">
+  
+  <div className="sqs-html-content" data-sqsp-text-block-content><h2 style={{whiteSpace: "pre-wrap"} as any} data-rte-preserve-empty="true"><strong>Ajaza</strong></h2><h2 style={{whiteSpace: "pre-wrap"} as any} data-rte-preserve-empty="true">All Year Long</h2><p className="sqsrte-small" style={{whiteSpace: "pre-wrap"} as any} data-rte-preserve-empty="true">Ajaza in New Alamein City transforms the North Coast from a seasonal vacation spot to a year-round metropolitan hub.</p><p style={{textAlign: "justify", whiteSpace: "pre-wrap"} as any} className="sqsrte-small" data-rte-preserve-empty="true">It offers an elevated coastal living experience with lush greenery, scenic water features, and private homes with uninterrupted views.</p><p style={{textAlign: "justify", whiteSpace: "pre-wrap"} as any} className="sqsrte-small" data-rte-preserve-empty="true">Residents enjoy luxury amenities that combine style with practicality, making Ajaza an ideal place to live throughout all four seasons.</p></div>
+
+
+  
+<style id="container-styles" dangerouslySetInnerHTML={{ __html: `#block-553dbc0f36c9d3710646 {
+    
+    --stroke-style: none;--stroke-thickness: 6px;
+    
+      
+      
+      
+    
+
+
+
+  }
+
+  #block-553dbc0f36c9d3710646 .sqs-html-content {
+    
+    --tweak-text-block-padding: 6% 6% 6% 6%;
+  --tweak-text-block-padding: initial;
+}
+
+  .fe-block-553dbc0f36c9d3710646 {
+      mix-blend-mode: var(--tweak-text-block-blend
+  );
+      border-radius: var(--tweak-text-block-radius);
+  }
+
+  
+  
+.fe-block-553dbc0f36c9d3710646 {
+      --tweak-text-block-radius: 0px 0px 0px 0px;
+    }
+
+
+  
+  .fe-block-553dbc0f36c9d3710646 {
+      --tweak-text-block-blend
+  : normal;
+    }
+  
+
+  .fe-block-553dbc0f36c9d3710646 {
+    --blur-value: blur(15px);}
+
+` }} />
+
+<style id="override-container-styles" dangerouslySetInnerHTML={{ __html: `
+    @media screen and (max-width: 767px) {
+          
+            
+
+#block-553dbc0f36c9d3710646 {
+            
+            }
+        }
+    
+  
+    @media screen and (max-width: 767px) {
+          #block-553dbc0f36c9d3710646 .sqs-html-content {
+            
+            }
+        }
+    
+  @media screen and (max-width: 767px) {
+          
+          
+
+          
+          
+          
+        }` }} />
+<style className="transform-overrides-vars" dangerouslySetInnerHTML={{ __html: `
+  
+` }} />
+
+
+
+
+</div>
+</div></div></div><div className="fe-block fe-block-cd3e5e89e3db6bb9e5bc"><div className="sqs-block website-component-block sqs-block-website-component sqs-block-video video-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.video/5cd2eb05-323b-4682-af74-2d7edaeb939a_556/website.components.video.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.video/5cd2eb05-323b-4682-af74-2d7edaeb939a_556/4032.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.video/5cd2eb05-323b-4682-af74-2d7edaeb939a_556/website.components.video.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.video" data-sqsp-block="video" data-website-component-id="cd3e5e89e3db6bb9e5bc" id="block-cd3e5e89e3db6bb9e5bc"><div className="sqs-block-content">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+      
+    
+    <div className="intrinsic" style={{maxWidth: "100%"} as any}>
+      <div className="embed-block-wrapper">
+        <div
+          className="sqs-native-video"
+          data-config-settings=""
+          data-config-video="{&quot;systemDataSourceType&quot;:&quot;mp4&quot;,&quot;alexandriaUrl&quot;:&quot;https://video.squarespace-cdn.com/content/v1/6a61ec232383587ba923bad7/1784802344461-15RMTB5DN3BGZ2NJ5D2Z/{variant}&quot;,&quot;durationSeconds&quot;:95.166667,&quot;aspectRatio&quot;:1.7777777777777777,&quot;id&quot;:&quot;6a61ec282383587ba923bd3c&quot;,&quot;systemDataVariants&quot;:&quot;1920:1080,640:360&quot;,&quot;alexandriaLibraryId&quot;:&quot;6a61ec232383587ba923bad7&quot;,&quot;audioCodec&quot;:&quot;aac&quot;,&quot;systemDataId&quot;:&quot;1784802344461-15RMTB5DN3BGZ2NJ5D2Z&quot;,&quot;videoCodec&quot;:&quot;h264&quot;}"
+          
+        >
+          <div
+            className="native-video-player native-video-player--has-aspect-ratio"
+            style={{aspectRatio: "16/9"} as any}
+          ><video src="/videos/Ajaza.mp4" controls style={{ width: "100%", height: "100%", objectFit: "cover", position: "absolute", top: 0, left: 0 }} /></div>
+        </div>
+      </div>
+      
+      
+
+
+
+    </div>
+  
+
+
+
+
+<style className="transform-overrides-vars" dangerouslySetInnerHTML={{ __html: `
+  
+` }} />
+
+</div></div></div></div></div>
+    </div>
+  
+  </div>
+  
+</section>
+
+      
+    
+      
+        
+        
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
   
 </article>
 

@@ -1536,6 +1536,758 @@ export const Creeks = () => {
 
               </section>
 
+<section
+                data-test="page-section"
+
+                data-section-theme=""
+                className='page-section 
+    
+      full-bleed-section
+      layout-engine-section
+    
+    background-width--full-bleed
+    
+      section-height--medium
+    
+    
+      content-width--wide
+    
+    horizontal-alignment--center
+    vertical-alignment--middle
+    
+      
+    
+    
+    '
+
+                data-section-id="6a622eb823d1157cd7345c34"
+
+                data-controller="SectionWrapperController"
+                data-current-styles="{
+                                                                                                                                  &quot;imageOverlayOpacity&quot;: 0.15,
+                                                                                                                                  &quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
+                                                                                                                                  &quot;sectionHeight&quot;: &quot;section-height--medium&quot;,
+                                                                                                                                  &quot;customSectionHeight&quot;: 10,
+                                                                                                                                  &quot;horizontalAlignment&quot;: &quot;horizontal-alignment--center&quot;,
+                                                                                                                                  &quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
+                                                                                                                                  &quot;contentWidth&quot;: &quot;content-width--wide&quot;,
+                                                                                                                                  &quot;customContentWidth&quot;: 50,
+                                                                                                                                  &quot;sectionTheme&quot;: &quot;&quot;,
+                                                                                                                                  &quot;sectionAnimation&quot;: &quot;none&quot;,
+                                                                                                                                  &quot;backgroundMode&quot;: &quot;image&quot;
+                                                                                                                                }"
+                data-current-context="{
+                                                                                                                                  &quot;video&quot;: null,
+                                                                                                                                  &quot;backgroundImageId&quot;: null,
+                                                                                                                                  &quot;backgroundMediaEffect&quot;: null,
+                                                                                                                                  &quot;divider&quot;: null,
+                                                                                                                                  &quot;typeName&quot;: &quot;page&quot;
+                                                                                                                                }"
+                data-animation="none"
+                data-fluid-engine-section
+
+
+
+
+
+
+
+
+
+
+                data-sqsp-section="fluid-engine"
+
+
+              >
+                <div
+                  className="section-border"
+
+                >
+                  <div className="section-background">
+
+
+
+                  </div>
+                </div>
+                <div
+                  className='content-wrapper'
+                  style={{} as any}
+                >
+                  <div
+                    className="content"
+
+                  >
+
+
+
+
+
+
+
+
+
+
+                    <div data-fluid-engine="true"><style dangerouslySetInnerHTML={{
+                      __html: `
+
+.fe-6a622eb82e35e910ba3bc06a {
+  --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px);
+  --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 );
+
+  display: grid;
+  position: relative;
+  grid-area: 1/1/-1/-1;
+  grid-template-rows: repeat(31,minmax(24px, auto));
+  grid-template-columns:
+    minmax(var(--grid-gutter), 1fr)
+    repeat(8, minmax(0, var(--cell-max-width)))
+    minmax(var(--grid-gutter), 1fr);
+  row-gap: 11.0px;
+  column-gap: 11.0px;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+@media (min-width: 768px) {
+  .background-width--inset .fe-6a622eb82e35e910ba3bc06a {
+    --inset-padding: calc(var(--sqs-site-gutter) * 2);
+  }
+
+  .fe-6a622eb82e35e910ba3bc06a {
+    --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px);
+    --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 );
+   
+
+    --row-height-scaling-factor: 0.0215;
+    --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) ));
+
+    grid-template-rows: repeat(28,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto));
+    grid-template-columns:
+      minmax(var(--grid-gutter), 1fr)
+      repeat(24, minmax(0, var(--cell-max-width)))
+      minmax(var(--grid-gutter), 1fr);
+  }
+}
+
+
+  .fe-block-yui_3_17_2_1_1784821689856_2408 {
+    grid-area: 1/2/3/10;
+    z-index: 6;
+
+    @media (max-width: 767px) {
+      
+        
+      
+      
+    }
+  }
+
+  .fe-block-yui_3_17_2_1_1784821689856_2408 .sqs-block {
+    justify-content: center;
+  }
+
+  .fe-block-yui_3_17_2_1_1784821689856_2408 .sqs-block-alignment-wrapper {
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .fe-block-yui_3_17_2_1_1784821689856_2408 {
+      grid-area: 27/11/29/17;
+      z-index: 6;
+
+      
+        
+      
+
+      
+    }
+
+    .fe-block-yui_3_17_2_1_1784821689856_2408 .sqs-block {
+      justify-content: center;
+    }
+
+    .fe-block-yui_3_17_2_1_1784821689856_2408 .sqs-block-alignment-wrapper {
+      align-items: center;
+    }
+  }
+
+  .fe-block-yui_3_17_2_1_1784885647518_2035 {
+    grid-area: 4/2/6/10;
+    z-index: 7;
+
+    @media (max-width: 767px) {
+      
+        
+      
+      
+    }
+  }
+
+  .fe-block-yui_3_17_2_1_1784885647518_2035 .sqs-block {
+    justify-content: flex-start;
+  }
+
+  .fe-block-yui_3_17_2_1_1784885647518_2035 .sqs-block-alignment-wrapper {
+    align-items: flex-start;
+  }
+
+  @media (min-width: 768px) {
+    .fe-block-yui_3_17_2_1_1784885647518_2035 {
+      grid-area: 1/10/3/18;
+      z-index: 7;
+
+      
+        
+      
+
+      
+    }
+
+    .fe-block-yui_3_17_2_1_1784885647518_2035 .sqs-block {
+      justify-content: flex-start;
+    }
+
+    .fe-block-yui_3_17_2_1_1784885647518_2035 .sqs-block-alignment-wrapper {
+      align-items: flex-start;
+    }
+  }
+
+  .fe-block-yui_3_17_2_1_1784885647518_2374 {
+    grid-area: 6/2/9/10;
+    z-index: 8;
+
+    @media (max-width: 767px) {
+      
+        
+      
+      
+    }
+  }
+
+  .fe-block-yui_3_17_2_1_1784885647518_2374 .sqs-block {
+    justify-content: flex-start;
+  }
+
+  .fe-block-yui_3_17_2_1_1784885647518_2374 .sqs-block-alignment-wrapper {
+    align-items: flex-start;
+  }
+
+  @media (min-width: 768px) {
+    .fe-block-yui_3_17_2_1_1784885647518_2374 {
+      grid-area: 3/10/5/18;
+      z-index: 8;
+
+      
+        
+      
+
+      
+    }
+
+    .fe-block-yui_3_17_2_1_1784885647518_2374 .sqs-block {
+      justify-content: flex-start;
+    }
+
+    .fe-block-yui_3_17_2_1_1784885647518_2374 .sqs-block-alignment-wrapper {
+      align-items: flex-start;
+    }
+  }
+
+  .fe-block-7c9fdc9a93cb863918b0 {
+    grid-area: 9/2/auto/10; /* Fixed huge gap on mobile */
+    z-index: 5;
+
+    @media (max-width: 767px) {
+      
+      
+    }
+  }
+
+  .fe-block-7c9fdc9a93cb863918b0 .sqs-block {
+    justify-content: flex-start;
+  }
+
+  .fe-block-7c9fdc9a93cb863918b0 .sqs-block-alignment-wrapper {
+    align-items: flex-start;
+  }
+
+  @media (min-width: 768px) {
+    .fe-block-7c9fdc9a93cb863918b0 {
+      grid-area: 5/8/auto/20; /* Fixed huge gap */
+      z-index: 5;
+
+      
+
+      
+    }
+
+    .fe-block-7c9fdc9a93cb863918b0 .sqs-block {
+      justify-content: flex-start;
+    }
+
+    .fe-block-7c9fdc9a93cb863918b0 .sqs-block-alignment-wrapper {
+      align-items: flex-start;
+    }
+  }
+
+` }} /><div className="fluid-engine fe-6a622eb82e35e910ba3bc06a"><div className="fe-block fe-block-yui_3_17_2_1_1784821689856_2408"><div className="sqs-block website-component-block sqs-block-website-component sqs-block-button button-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/3648b731-34b1-40c4-b627-cc4fe4547e11_980/website.components.button.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/3648b731-34b1-40c4-b627-cc4fe4547e11_980/website.components.button.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.button" data-sqsp-block="button" data-website-component-id="yui_3_17_2_1_1784821689856_2408" id="block-yui_3_17_2_1_1784821689856_2408"><div className="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+                        <div
+                          className="sqs-block-button-container sqs-button-block-container-system_desktop sqs-block-button-container--center sqs-stretched"
+                          data-animation-role="button"
+                          data-button-size="medium"
+                          data-button-type="primary"
+
+                        >
+                          <a
+                            href="https://static1.squarespace.com/static/6a61ec232383587ba923bad7/t/6a6228c057253e42a338b031/1784817856186/Creeks+by+Elsewhere_compressed_compressed+%282%29.pdf"
+                            className="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element"
+                            data-sqsp-button
+                            target="_blank"
+                          >
+                            creeks brochure
+                          </a>
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <style dangerouslySetInnerHTML={{
+                          __html: `
+  #block-yui_3_17_2_1_1784821689856_2408 {
+    --sqs-block-content-flex: 1;
+  }
+
+  
+  
+    
+      
+      
+    
+      
+      
+        
+      
+    
+  
+` }} />
+                        <style className="transform-vars" dangerouslySetInnerHTML={{
+                          __html: `
+    .fe-block-yui_3_17_2_1_1784821689856_2408 {
+      --opacity: 100%;
+      --translate-x: 0px;
+      --translate-y: 0px;
+      --rotation: 0deg;
+      --scale-x: 100%;
+      --scale-y: 100%;
+      --skew-x: 0deg;
+      --skew-y: 0deg;
+      --origin-x: 50%;
+      --origin-y: 50%;
+      --block-transform: none;
+
+      opacity: var(--opacity, 1);
+      transform: var(--block-transform);
+      transform-origin: var(--origin-x) var(--origin-y);
+    }
+  ` }} /><style className="transform-overrides-vars" dangerouslySetInnerHTML={{
+                          __html: `
+  
+` }} />
+
+                      </div></div></div><div className="fe-block fe-block-yui_3_17_2_1_1784885647518_2035"><div className="sqs-block website-component-block sqs-block-website-component sqs-block-html html-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/d01d9fd8-3193-4bda-936f-1aec27126dc9_810/website.components.html.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/d01d9fd8-3193-4bda-936f-1aec27126dc9_810/website.components.html.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.html" data-sqsp-block="text" data-website-component-id="yui_3_17_2_1_1784885647518_2035" id="block-yui_3_17_2_1_1784885647518_2035"><div className="sqs-block-content"><div className="sqs-text-block-container">
+
+                        <div className="sqs-html-content" data-sqsp-text-block-content><h3 style={{ textAlign: "center", whiteSpace: "pre-wrap" } as any} data-rte-preserve-empty="true">Find Your Perfect Property</h3></div>
+
+
+
+                        <style id="container-styles" dangerouslySetInnerHTML={{
+                          __html: `#block-yui_3_17_2_1_1784885647518_2035 {
+    
+    --stroke-style: none;--stroke-thickness: 2px;
+    
+      --tweak-text-block-stroke-color: hsla(var(--black-hsl), 1)
+;
+      
+      
+      
+    
+
+
+
+  }
+
+  #block-yui_3_17_2_1_1784885647518_2035 .sqs-html-content {
+    
+    --tweak-text-block-padding: 6% 6% 6% 6%;
+  --tweak-text-block-padding: initial;
+}
+
+  .fe-block-yui_3_17_2_1_1784885647518_2035 {
+      mix-blend-mode: var(--tweak-text-block-blend
+  );
+      border-radius: var(--tweak-text-block-radius);
+  }
+
+  
+  
+.fe-block-yui_3_17_2_1_1784885647518_2035 {
+      --tweak-text-block-radius: 0px 0px 0px 0px;
+    }
+
+
+  
+  .fe-block-yui_3_17_2_1_1784885647518_2035 {
+      --tweak-text-block-blend
+  : normal;
+    }
+  
+
+  .fe-block-yui_3_17_2_1_1784885647518_2035 {
+    --blur-value: blur(15px);}
+
+` }} />
+
+                        <style id="override-container-styles" dangerouslySetInnerHTML={{
+                          __html: `
+    @media screen and (max-width: 767px) {
+          
+            
+
+#block-yui_3_17_2_1_1784885647518_2035 {
+            
+            }
+        }
+    
+  
+    @media screen and (max-width: 767px) {
+          #block-yui_3_17_2_1_1784885647518_2035 .sqs-html-content {
+            
+            }
+        }
+    
+  @media screen and (max-width: 767px) {
+          
+          
+
+          
+          
+          
+        }` }} />
+                        <style className="transform-vars" dangerouslySetInnerHTML={{
+                          __html: `
+    .fe-block-yui_3_17_2_1_1784885647518_2035 {
+      --opacity: 100%;
+      --translate-x: 0px;
+      --translate-y: 0px;
+      --rotation: 0deg;
+      --scale-x: 100%;
+      --scale-y: 100%;
+      --skew-x: 0deg;
+      --skew-y: 0deg;
+      --origin-x: 50%;
+      --origin-y: 50%;
+      --block-transform: none;
+
+      opacity: var(--opacity, 1);
+      transform: var(--block-transform);
+      transform-origin: var(--origin-x) var(--origin-y);
+    }
+  ` }} /><style className="transform-overrides-vars" dangerouslySetInnerHTML={{
+                          __html: `
+  
+` }} />
+
+
+
+
+                      </div>
+                      </div></div></div><div className="fe-block fe-block-yui_3_17_2_1_1784885647518_2374"><div className="sqs-block website-component-block sqs-block-website-component sqs-block-html html-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/d01d9fd8-3193-4bda-936f-1aec27126dc9_810/website.components.html.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/d01d9fd8-3193-4bda-936f-1aec27126dc9_810/website.components.html.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.html" data-sqsp-block="text" data-website-component-id="yui_3_17_2_1_1784885647518_2374" id="block-yui_3_17_2_1_1784885647518_2374"><div className="sqs-block-content"><div className="sqs-text-block-container">
+
+                        <div className="sqs-html-content" data-sqsp-text-block-content><p style={{ textAlign: "center", whiteSpace: "pre-wrap" } as any} className="sqsrte-small" data-rte-preserve-empty="true">Just share your details below and our expert team will contact you shortly. Fast, reliable, and 100% confidential.</p></div>
+
+
+
+                        <style id="container-styles" dangerouslySetInnerHTML={{
+                          __html: `#block-yui_3_17_2_1_1784885647518_2374 {
+    
+    --stroke-style: none;--stroke-thickness: 2px;
+    
+      --tweak-text-block-stroke-color: hsla(var(--black-hsl), 1)
+;
+      
+      
+      
+    
+
+
+
+  }
+
+  #block-yui_3_17_2_1_1784885647518_2374 .sqs-html-content {
+    
+    --tweak-text-block-padding: 6% 6% 6% 6%;
+  --tweak-text-block-padding: initial;
+}
+
+  .fe-block-yui_3_17_2_1_1784885647518_2374 {
+      mix-blend-mode: var(--tweak-text-block-blend
+  );
+      border-radius: var(--tweak-text-block-radius);
+  }
+
+  
+  
+.fe-block-yui_3_17_2_1_1784885647518_2374 {
+      --tweak-text-block-radius: 0px 0px 0px 0px;
+    }
+
+
+  
+  .fe-block-yui_3_17_2_1_1784885647518_2374 {
+      --tweak-text-block-blend
+  : normal;
+    }
+  
+
+  .fe-block-yui_3_17_2_1_1784885647518_2374 {
+    --blur-value: blur(15px);}
+
+` }} />
+
+                        <style id="override-container-styles" dangerouslySetInnerHTML={{
+                          __html: `
+    @media screen and (max-width: 767px) {
+          
+            
+
+#block-yui_3_17_2_1_1784885647518_2374 {
+            
+            }
+        }
+    
+  
+    @media screen and (max-width: 767px) {
+          #block-yui_3_17_2_1_1784885647518_2374 .sqs-html-content {
+            
+            }
+        }
+    
+  @media screen and (max-width: 767px) {
+          
+          
+
+          
+          
+          
+        }` }} />
+                        <style className="transform-vars" dangerouslySetInnerHTML={{
+                          __html: `
+    .fe-block-yui_3_17_2_1_1784885647518_2374 {
+      --opacity: 100%;
+      --translate-x: 0px;
+      --translate-y: 0px;
+      --rotation: 0deg;
+      --scale-x: 100%;
+      --scale-y: 100%;
+      --skew-x: 0deg;
+      --skew-y: 0deg;
+      --origin-x: 50%;
+      --origin-y: 50%;
+      --block-transform: none;
+
+      opacity: var(--opacity, 1);
+      transform: var(--block-transform);
+      transform-origin: var(--origin-x) var(--origin-y);
+    }
+  ` }} /><style className="transform-overrides-vars" dangerouslySetInnerHTML={{
+                          __html: `
+  
+` }} />
+
+
+
+
+                      </div>
+                      </div></div></div><div className="fe-block fe-block-7c9fdc9a93cb863918b0"><div className="sqs-block website-component-block sqs-block-website-component sqs-block-form form-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.form/27be60de-8d5a-490e-aafa-b0438d734062_982/website.components.form.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.form/27be60de-8d5a-490e-aafa-b0438d734062_982/website.components.form.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.form" data-sqsp-block="form" data-website-component-id="7c9fdc9a93cb863918b0" id="block-7c9fdc9a93cb863918b0"><div className="sqs-block-content">
+
+
+
+
+
+
+                        <div className="sqs-site-style-form" >
+
+
+
+
+
+                          <div id="form-submission-html-6a622ebc2e35e910ba3bc0a0" className="sqs-form-block-submission-html" data-submission-html=""></div>
+                          <style id="container-styles" dangerouslySetInnerHTML={{
+                            __html: `#block-7c9fdc9a93cb863918b0 {
+    
+    --stroke-style: none;--stroke-thickness: 6px;
+    
+      
+      
+      
+    
+
+
+
+  }
+
+  #block-7c9fdc9a93cb863918b0 .form-wrapper {
+    
+    --form-block-padding: 6% 6% 6% 6%;
+  --form-block-padding: initial;
+}
+
+  .fe-block-7c9fdc9a93cb863918b0 {
+      mix-blend-mode: var(--form-block-blend-mode
+    );
+      border-radius: var(--form-block-border-radius);
+  }
+
+  
+  
+.fe-block-7c9fdc9a93cb863918b0 {
+      --form-block-border-radius: 0px 0px 0px 0px;
+    }
+
+
+  
+  .fe-block-7c9fdc9a93cb863918b0 {
+      --form-block-blend-mode
+    : normal;
+    }
+  
+
+  .fe-block-7c9fdc9a93cb863918b0 {
+    --blur-value: blur(15px);}
+
+` }} />
+
+                          <style id="override-container-styles" dangerouslySetInnerHTML={{
+                            __html: `
+    @media screen and (max-width: 767px) {
+          
+            
+
+#block-7c9fdc9a93cb863918b0 {
+            
+            }
+        }
+    
+  
+    @media screen and (max-width: 767px) {
+          #block-7c9fdc9a93cb863918b0 .form-wrapper {
+            
+            }
+        }
+    
+  @media screen and (max-width: 767px) {
+          
+          
+
+          
+          
+          
+        }` }} />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          <ContactForm />
+                          <style dangerouslySetInnerHTML={{
+                            __html: `
+      #block-7c9fdc9a93cb863918b0 .form-wrapper {
+        display: grid;
+      }
+
+      #block-7c9fdc9a93cb863918b0 .lightbox-handle-wrapper {
+        display: none;
+      }
+
+      #block-7c9fdc9a93cb863918b0 .lightbox-handle-wrapper-system_desktop {
+        display: block;
+      }
+    ` }} />
+
+                          <style className="overrides-vars" dangerouslySetInnerHTML={{
+                            __html: `
+      ` }} />
+
+                          <style className="transform-vars" dangerouslySetInnerHTML={{
+                            __html: `
+    .fe-block-7c9fdc9a93cb863918b0 {
+      --opacity: 100%;
+      --translate-x: 0px;
+      --translate-y: 0px;
+      --rotation: 0deg;
+      --scale-x: 100%;
+      --scale-y: 100%;
+      --skew-x: 0deg;
+      --skew-y: 0deg;
+      --origin-x: 50%;
+      --origin-y: 50%;
+      --block-transform: none;
+
+      opacity: var(--opacity, 1);
+      transform: var(--block-transform);
+      transform-origin: var(--origin-x) var(--origin-y);
+    }
+  ` }} /><style className="transform-overrides-vars" dangerouslySetInnerHTML={{
+                            __html: `
+  
+` }} />
+
+
+
+
+
+                        </div>
+                      </div></div></div></div></div>
+                  </div>
+
+                </div>
+
+              </section>
+
+
 
 
 
@@ -2315,756 +3067,7 @@ export const Creeks = () => {
 
 
 
-              <section
-                data-test="page-section"
-
-                data-section-theme=""
-                className='page-section 
-    
-      full-bleed-section
-      layout-engine-section
-    
-    background-width--full-bleed
-    
-      section-height--medium
-    
-    
-      content-width--wide
-    
-    horizontal-alignment--center
-    vertical-alignment--middle
-    
-      
-    
-    
-    '
-
-                data-section-id="6a622eb823d1157cd7345c34"
-
-                data-controller="SectionWrapperController"
-                data-current-styles="{
-                                                                                                                                  &quot;imageOverlayOpacity&quot;: 0.15,
-                                                                                                                                  &quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
-                                                                                                                                  &quot;sectionHeight&quot;: &quot;section-height--medium&quot;,
-                                                                                                                                  &quot;customSectionHeight&quot;: 10,
-                                                                                                                                  &quot;horizontalAlignment&quot;: &quot;horizontal-alignment--center&quot;,
-                                                                                                                                  &quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
-                                                                                                                                  &quot;contentWidth&quot;: &quot;content-width--wide&quot;,
-                                                                                                                                  &quot;customContentWidth&quot;: 50,
-                                                                                                                                  &quot;sectionTheme&quot;: &quot;&quot;,
-                                                                                                                                  &quot;sectionAnimation&quot;: &quot;none&quot;,
-                                                                                                                                  &quot;backgroundMode&quot;: &quot;image&quot;
-                                                                                                                                }"
-                data-current-context="{
-                                                                                                                                  &quot;video&quot;: null,
-                                                                                                                                  &quot;backgroundImageId&quot;: null,
-                                                                                                                                  &quot;backgroundMediaEffect&quot;: null,
-                                                                                                                                  &quot;divider&quot;: null,
-                                                                                                                                  &quot;typeName&quot;: &quot;page&quot;
-                                                                                                                                }"
-                data-animation="none"
-                data-fluid-engine-section
-
-
-
-
-
-
-
-
-
-
-                data-sqsp-section="fluid-engine"
-
-
-              >
-                <div
-                  className="section-border"
-
-                >
-                  <div className="section-background">
-
-
-
-                  </div>
-                </div>
-                <div
-                  className='content-wrapper'
-                  style={{} as any}
-                >
-                  <div
-                    className="content"
-
-                  >
-
-
-
-
-
-
-
-
-
-
-                    <div data-fluid-engine="true"><style dangerouslySetInnerHTML={{
-                      __html: `
-
-.fe-6a622eb82e35e910ba3bc06a {
-  --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px);
-  --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 );
-
-  display: grid;
-  position: relative;
-  grid-area: 1/1/-1/-1;
-  grid-template-rows: repeat(31,minmax(24px, auto));
-  grid-template-columns:
-    minmax(var(--grid-gutter), 1fr)
-    repeat(8, minmax(0, var(--cell-max-width)))
-    minmax(var(--grid-gutter), 1fr);
-  row-gap: 11.0px;
-  column-gap: 11.0px;
-  overflow-x: hidden;
-  overflow-x: clip;
-}
-
-@media (min-width: 768px) {
-  .background-width--inset .fe-6a622eb82e35e910ba3bc06a {
-    --inset-padding: calc(var(--sqs-site-gutter) * 2);
-  }
-
-  .fe-6a622eb82e35e910ba3bc06a {
-    --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px);
-    --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 );
-   
-
-    --row-height-scaling-factor: 0.0215;
-    --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) ));
-
-    grid-template-rows: repeat(28,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto));
-    grid-template-columns:
-      minmax(var(--grid-gutter), 1fr)
-      repeat(24, minmax(0, var(--cell-max-width)))
-      minmax(var(--grid-gutter), 1fr);
-  }
-}
-
-
-  .fe-block-yui_3_17_2_1_1784821689856_2408 {
-    grid-area: 1/2/3/10;
-    z-index: 6;
-
-    @media (max-width: 767px) {
-      
-        
-      
-      
-    }
-  }
-
-  .fe-block-yui_3_17_2_1_1784821689856_2408 .sqs-block {
-    justify-content: center;
-  }
-
-  .fe-block-yui_3_17_2_1_1784821689856_2408 .sqs-block-alignment-wrapper {
-    align-items: center;
-  }
-
-  @media (min-width: 768px) {
-    .fe-block-yui_3_17_2_1_1784821689856_2408 {
-      grid-area: 27/11/29/17;
-      z-index: 6;
-
-      
-        
-      
-
-      
-    }
-
-    .fe-block-yui_3_17_2_1_1784821689856_2408 .sqs-block {
-      justify-content: center;
-    }
-
-    .fe-block-yui_3_17_2_1_1784821689856_2408 .sqs-block-alignment-wrapper {
-      align-items: center;
-    }
-  }
-
-  .fe-block-yui_3_17_2_1_1784885647518_2035 {
-    grid-area: 4/2/6/10;
-    z-index: 7;
-
-    @media (max-width: 767px) {
-      
-        
-      
-      
-    }
-  }
-
-  .fe-block-yui_3_17_2_1_1784885647518_2035 .sqs-block {
-    justify-content: flex-start;
-  }
-
-  .fe-block-yui_3_17_2_1_1784885647518_2035 .sqs-block-alignment-wrapper {
-    align-items: flex-start;
-  }
-
-  @media (min-width: 768px) {
-    .fe-block-yui_3_17_2_1_1784885647518_2035 {
-      grid-area: 1/10/3/18;
-      z-index: 7;
-
-      
-        
-      
-
-      
-    }
-
-    .fe-block-yui_3_17_2_1_1784885647518_2035 .sqs-block {
-      justify-content: flex-start;
-    }
-
-    .fe-block-yui_3_17_2_1_1784885647518_2035 .sqs-block-alignment-wrapper {
-      align-items: flex-start;
-    }
-  }
-
-  .fe-block-yui_3_17_2_1_1784885647518_2374 {
-    grid-area: 6/2/9/10;
-    z-index: 8;
-
-    @media (max-width: 767px) {
-      
-        
-      
-      
-    }
-  }
-
-  .fe-block-yui_3_17_2_1_1784885647518_2374 .sqs-block {
-    justify-content: flex-start;
-  }
-
-  .fe-block-yui_3_17_2_1_1784885647518_2374 .sqs-block-alignment-wrapper {
-    align-items: flex-start;
-  }
-
-  @media (min-width: 768px) {
-    .fe-block-yui_3_17_2_1_1784885647518_2374 {
-      grid-area: 3/10/5/18;
-      z-index: 8;
-
-      
-        
-      
-
-      
-    }
-
-    .fe-block-yui_3_17_2_1_1784885647518_2374 .sqs-block {
-      justify-content: flex-start;
-    }
-
-    .fe-block-yui_3_17_2_1_1784885647518_2374 .sqs-block-alignment-wrapper {
-      align-items: flex-start;
-    }
-  }
-
-  .fe-block-7c9fdc9a93cb863918b0 {
-    grid-area: 9/2/auto/10; /* Fixed huge gap on mobile */
-    z-index: 5;
-
-    @media (max-width: 767px) {
-      
-      
-    }
-  }
-
-  .fe-block-7c9fdc9a93cb863918b0 .sqs-block {
-    justify-content: flex-start;
-  }
-
-  .fe-block-7c9fdc9a93cb863918b0 .sqs-block-alignment-wrapper {
-    align-items: flex-start;
-  }
-
-  @media (min-width: 768px) {
-    .fe-block-7c9fdc9a93cb863918b0 {
-      grid-area: 5/8/auto/20; /* Fixed huge gap */
-      z-index: 5;
-
-      
-
-      
-    }
-
-    .fe-block-7c9fdc9a93cb863918b0 .sqs-block {
-      justify-content: flex-start;
-    }
-
-    .fe-block-7c9fdc9a93cb863918b0 .sqs-block-alignment-wrapper {
-      align-items: flex-start;
-    }
-  }
-
-` }} /><div className="fluid-engine fe-6a622eb82e35e910ba3bc06a"><div className="fe-block fe-block-yui_3_17_2_1_1784821689856_2408"><div className="sqs-block website-component-block sqs-block-website-component sqs-block-button button-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/3648b731-34b1-40c4-b627-cc4fe4547e11_980/website.components.button.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/3648b731-34b1-40c4-b627-cc4fe4547e11_980/website.components.button.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.button" data-sqsp-block="button" data-website-component-id="yui_3_17_2_1_1784821689856_2408" id="block-yui_3_17_2_1_1784821689856_2408"><div className="sqs-block-content">
-
-
-
-
-
-
-
-
-
-
-
-                        <div
-                          className="sqs-block-button-container sqs-button-block-container-system_desktop sqs-block-button-container--center sqs-stretched"
-                          data-animation-role="button"
-                          data-button-size="medium"
-                          data-button-type="primary"
-
-                        >
-                          <a
-                            href="https://static1.squarespace.com/static/6a61ec232383587ba923bad7/t/6a6228c057253e42a338b031/1784817856186/Creeks+by+Elsewhere_compressed_compressed+%282%29.pdf"
-                            className="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element"
-                            data-sqsp-button
-                            target="_blank"
-                          >
-                            creeks brochure
-                          </a>
-
-
-
-
-                        </div>
-
-
-
-
-
-
-
-
-
-
-                        <style dangerouslySetInnerHTML={{
-                          __html: `
-  #block-yui_3_17_2_1_1784821689856_2408 {
-    --sqs-block-content-flex: 1;
-  }
-
-  
-  
-    
-      
-      
-    
-      
-      
-        
-      
-    
-  
-` }} />
-                        <style className="transform-vars" dangerouslySetInnerHTML={{
-                          __html: `
-    .fe-block-yui_3_17_2_1_1784821689856_2408 {
-      --opacity: 100%;
-      --translate-x: 0px;
-      --translate-y: 0px;
-      --rotation: 0deg;
-      --scale-x: 100%;
-      --scale-y: 100%;
-      --skew-x: 0deg;
-      --skew-y: 0deg;
-      --origin-x: 50%;
-      --origin-y: 50%;
-      --block-transform: none;
-
-      opacity: var(--opacity, 1);
-      transform: var(--block-transform);
-      transform-origin: var(--origin-x) var(--origin-y);
-    }
-  ` }} /><style className="transform-overrides-vars" dangerouslySetInnerHTML={{
-                          __html: `
-  
-` }} />
-
-                      </div></div></div><div className="fe-block fe-block-yui_3_17_2_1_1784885647518_2035"><div className="sqs-block website-component-block sqs-block-website-component sqs-block-html html-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/d01d9fd8-3193-4bda-936f-1aec27126dc9_810/website.components.html.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/d01d9fd8-3193-4bda-936f-1aec27126dc9_810/website.components.html.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.html" data-sqsp-block="text" data-website-component-id="yui_3_17_2_1_1784885647518_2035" id="block-yui_3_17_2_1_1784885647518_2035"><div className="sqs-block-content"><div className="sqs-text-block-container">
-
-                        <div className="sqs-html-content" data-sqsp-text-block-content><h3 style={{ textAlign: "center", whiteSpace: "pre-wrap" } as any} data-rte-preserve-empty="true">Find Your Perfect Property</h3></div>
-
-
-
-                        <style id="container-styles" dangerouslySetInnerHTML={{
-                          __html: `#block-yui_3_17_2_1_1784885647518_2035 {
-    
-    --stroke-style: none;--stroke-thickness: 2px;
-    
-      --tweak-text-block-stroke-color: hsla(var(--black-hsl), 1)
-;
-      
-      
-      
-    
-
-
-
-  }
-
-  #block-yui_3_17_2_1_1784885647518_2035 .sqs-html-content {
-    
-    --tweak-text-block-padding: 6% 6% 6% 6%;
-  --tweak-text-block-padding: initial;
-}
-
-  .fe-block-yui_3_17_2_1_1784885647518_2035 {
-      mix-blend-mode: var(--tweak-text-block-blend
-  );
-      border-radius: var(--tweak-text-block-radius);
-  }
-
-  
-  
-.fe-block-yui_3_17_2_1_1784885647518_2035 {
-      --tweak-text-block-radius: 0px 0px 0px 0px;
-    }
-
-
-  
-  .fe-block-yui_3_17_2_1_1784885647518_2035 {
-      --tweak-text-block-blend
-  : normal;
-    }
-  
-
-  .fe-block-yui_3_17_2_1_1784885647518_2035 {
-    --blur-value: blur(15px);}
-
-` }} />
-
-                        <style id="override-container-styles" dangerouslySetInnerHTML={{
-                          __html: `
-    @media screen and (max-width: 767px) {
-          
-            
-
-#block-yui_3_17_2_1_1784885647518_2035 {
-            
-            }
-        }
-    
-  
-    @media screen and (max-width: 767px) {
-          #block-yui_3_17_2_1_1784885647518_2035 .sqs-html-content {
-            
-            }
-        }
-    
-  @media screen and (max-width: 767px) {
-          
-          
-
-          
-          
-          
-        }` }} />
-                        <style className="transform-vars" dangerouslySetInnerHTML={{
-                          __html: `
-    .fe-block-yui_3_17_2_1_1784885647518_2035 {
-      --opacity: 100%;
-      --translate-x: 0px;
-      --translate-y: 0px;
-      --rotation: 0deg;
-      --scale-x: 100%;
-      --scale-y: 100%;
-      --skew-x: 0deg;
-      --skew-y: 0deg;
-      --origin-x: 50%;
-      --origin-y: 50%;
-      --block-transform: none;
-
-      opacity: var(--opacity, 1);
-      transform: var(--block-transform);
-      transform-origin: var(--origin-x) var(--origin-y);
-    }
-  ` }} /><style className="transform-overrides-vars" dangerouslySetInnerHTML={{
-                          __html: `
-  
-` }} />
-
-
-
-
-                      </div>
-                      </div></div></div><div className="fe-block fe-block-yui_3_17_2_1_1784885647518_2374"><div className="sqs-block website-component-block sqs-block-website-component sqs-block-html html-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/d01d9fd8-3193-4bda-936f-1aec27126dc9_810/website.components.html.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/d01d9fd8-3193-4bda-936f-1aec27126dc9_810/website.components.html.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.html" data-sqsp-block="text" data-website-component-id="yui_3_17_2_1_1784885647518_2374" id="block-yui_3_17_2_1_1784885647518_2374"><div className="sqs-block-content"><div className="sqs-text-block-container">
-
-                        <div className="sqs-html-content" data-sqsp-text-block-content><p style={{ textAlign: "center", whiteSpace: "pre-wrap" } as any} className="sqsrte-small" data-rte-preserve-empty="true">Just share your details below and our expert team will contact you shortly. Fast, reliable, and 100% confidential.</p></div>
-
-
-
-                        <style id="container-styles" dangerouslySetInnerHTML={{
-                          __html: `#block-yui_3_17_2_1_1784885647518_2374 {
-    
-    --stroke-style: none;--stroke-thickness: 2px;
-    
-      --tweak-text-block-stroke-color: hsla(var(--black-hsl), 1)
-;
-      
-      
-      
-    
-
-
-
-  }
-
-  #block-yui_3_17_2_1_1784885647518_2374 .sqs-html-content {
-    
-    --tweak-text-block-padding: 6% 6% 6% 6%;
-  --tweak-text-block-padding: initial;
-}
-
-  .fe-block-yui_3_17_2_1_1784885647518_2374 {
-      mix-blend-mode: var(--tweak-text-block-blend
-  );
-      border-radius: var(--tweak-text-block-radius);
-  }
-
-  
-  
-.fe-block-yui_3_17_2_1_1784885647518_2374 {
-      --tweak-text-block-radius: 0px 0px 0px 0px;
-    }
-
-
-  
-  .fe-block-yui_3_17_2_1_1784885647518_2374 {
-      --tweak-text-block-blend
-  : normal;
-    }
-  
-
-  .fe-block-yui_3_17_2_1_1784885647518_2374 {
-    --blur-value: blur(15px);}
-
-` }} />
-
-                        <style id="override-container-styles" dangerouslySetInnerHTML={{
-                          __html: `
-    @media screen and (max-width: 767px) {
-          
-            
-
-#block-yui_3_17_2_1_1784885647518_2374 {
-            
-            }
-        }
-    
-  
-    @media screen and (max-width: 767px) {
-          #block-yui_3_17_2_1_1784885647518_2374 .sqs-html-content {
-            
-            }
-        }
-    
-  @media screen and (max-width: 767px) {
-          
-          
-
-          
-          
-          
-        }` }} />
-                        <style className="transform-vars" dangerouslySetInnerHTML={{
-                          __html: `
-    .fe-block-yui_3_17_2_1_1784885647518_2374 {
-      --opacity: 100%;
-      --translate-x: 0px;
-      --translate-y: 0px;
-      --rotation: 0deg;
-      --scale-x: 100%;
-      --scale-y: 100%;
-      --skew-x: 0deg;
-      --skew-y: 0deg;
-      --origin-x: 50%;
-      --origin-y: 50%;
-      --block-transform: none;
-
-      opacity: var(--opacity, 1);
-      transform: var(--block-transform);
-      transform-origin: var(--origin-x) var(--origin-y);
-    }
-  ` }} /><style className="transform-overrides-vars" dangerouslySetInnerHTML={{
-                          __html: `
-  
-` }} />
-
-
-
-
-                      </div>
-                      </div></div></div><div className="fe-block fe-block-7c9fdc9a93cb863918b0"><div className="sqs-block website-component-block sqs-block-website-component sqs-block-form form-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.form/27be60de-8d5a-490e-aafa-b0438d734062_982/website.components.form.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.form/27be60de-8d5a-490e-aafa-b0438d734062_982/website.components.form.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.form" data-sqsp-block="form" data-website-component-id="7c9fdc9a93cb863918b0" id="block-7c9fdc9a93cb863918b0"><div className="sqs-block-content">
-
-
-
-
-
-
-                        <div className="sqs-site-style-form" >
-
-
-
-
-
-                          <div id="form-submission-html-6a622ebc2e35e910ba3bc0a0" className="sqs-form-block-submission-html" data-submission-html=""></div>
-                          <style id="container-styles" dangerouslySetInnerHTML={{
-                            __html: `#block-7c9fdc9a93cb863918b0 {
-    
-    --stroke-style: none;--stroke-thickness: 6px;
-    
-      
-      
-      
-    
-
-
-
-  }
-
-  #block-7c9fdc9a93cb863918b0 .form-wrapper {
-    
-    --form-block-padding: 6% 6% 6% 6%;
-  --form-block-padding: initial;
-}
-
-  .fe-block-7c9fdc9a93cb863918b0 {
-      mix-blend-mode: var(--form-block-blend-mode
-    );
-      border-radius: var(--form-block-border-radius);
-  }
-
-  
-  
-.fe-block-7c9fdc9a93cb863918b0 {
-      --form-block-border-radius: 0px 0px 0px 0px;
-    }
-
-
-  
-  .fe-block-7c9fdc9a93cb863918b0 {
-      --form-block-blend-mode
-    : normal;
-    }
-  
-
-  .fe-block-7c9fdc9a93cb863918b0 {
-    --blur-value: blur(15px);}
-
-` }} />
-
-                          <style id="override-container-styles" dangerouslySetInnerHTML={{
-                            __html: `
-    @media screen and (max-width: 767px) {
-          
-            
-
-#block-7c9fdc9a93cb863918b0 {
-            
-            }
-        }
-    
-  
-    @media screen and (max-width: 767px) {
-          #block-7c9fdc9a93cb863918b0 .form-wrapper {
-            
-            }
-        }
-    
-  @media screen and (max-width: 767px) {
-          
-          
-
-          
-          
-          
-        }` }} />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                          <ContactForm />
-                          <style dangerouslySetInnerHTML={{
-                            __html: `
-      #block-7c9fdc9a93cb863918b0 .form-wrapper {
-        display: grid;
-      }
-
-      #block-7c9fdc9a93cb863918b0 .lightbox-handle-wrapper {
-        display: none;
-      }
-
-      #block-7c9fdc9a93cb863918b0 .lightbox-handle-wrapper-system_desktop {
-        display: block;
-      }
-    ` }} />
-
-                          <style className="overrides-vars" dangerouslySetInnerHTML={{
-                            __html: `
-      ` }} />
-
-                          <style className="transform-vars" dangerouslySetInnerHTML={{
-                            __html: `
-    .fe-block-7c9fdc9a93cb863918b0 {
-      --opacity: 100%;
-      --translate-x: 0px;
-      --translate-y: 0px;
-      --rotation: 0deg;
-      --scale-x: 100%;
-      --scale-y: 100%;
-      --skew-x: 0deg;
-      --skew-y: 0deg;
-      --origin-x: 50%;
-      --origin-y: 50%;
-      --block-transform: none;
-
-      opacity: var(--opacity, 1);
-      transform: var(--block-transform);
-      transform-origin: var(--origin-x) var(--origin-y);
-    }
-  ` }} /><style className="transform-overrides-vars" dangerouslySetInnerHTML={{
-                            __html: `
-  
-` }} />
-
-
-
-
-
-                        </div>
-                      </div></div></div></div></div>
-                  </div>
-
-                </div>
-
-              </section>
+              
 
 
 
