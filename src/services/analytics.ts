@@ -108,12 +108,11 @@ export const trackGoogleAdsLead = () => {
   }
 
   if (typeof window !== 'undefined' && window.gtag) {
-    const prefix = CONVERSION_ID.startsWith('AW-') ? '' : 'AW-';
     window.gtag('event', 'conversion', {
-      'send_to': `${prefix}${CONVERSION_ID}/${CONVERSION_LABEL}`,
+      send_to: `${import.meta.env.VITE_GOOGLE_ADS_CONVERSION_ID}/${import.meta.env.VITE_GOOGLE_ADS_CONVERSION_LABEL}`
     });
     logDebug('Google Ads Conversion Fired', {
-      conversion_id: `${prefix}${CONVERSION_ID}`,
+      conversion_id: CONVERSION_ID,
       conversion_label: CONVERSION_LABEL,
     });
   }
