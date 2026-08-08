@@ -2097,7 +2097,7 @@ export const Ajaza = () => {
     className="section-border"
     
   >
-    <div className="section-background">\n</div>
+    <div className="section-background"></div>
   </div>
   <div
     className='content-wrapper'
